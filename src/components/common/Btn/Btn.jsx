@@ -19,7 +19,7 @@ const Btn = ({txt, variant, className="", ...props}) => {
 
 Btn.propTypes = {
 	txt: PropTypes.string.isRequired,
-	variant: PropTypes.oneOf(["default", "ghost", "pill"]),
+	variant: PropTypes.oneOf(["default", "ghost", "pill", "rounded"]),
 	className: PropTypes.string,
 };
 

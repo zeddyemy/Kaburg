@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Nav from "./Nav/Nav";
 
 import "./Header.css";
 
 const Header = () => {
+	const [headerBg, setHeaderBg] = useState("");
 	const [isNavOpen, setIsNavOpen] = useState(false);
+
+	const handleScroll = () => {
+		if (window.scrollY > 50) {
+			setHeaderBg("header-bg");
+		} else {
+			setHeaderBg("");
+		}
+	};
 
 	const toggleNav = () => {
 		setIsNavOpen(!isNavOpen);
@@ -13,9 +22,19 @@ const Header = () => {
 		document.body.style.overflow = !isNavOpen ? "hidden" : "unset";
 	};
 
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
 	return (
 		<>
-			<header id="site-header" className="site-header header-bg">
+			<header
+				id="site-header"
+				className={`site-header ${headerBg}`}
+			>
 				<div className="container">
 					<div
 						className={`header-box flex ${
