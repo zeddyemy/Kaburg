@@ -2,6 +2,7 @@ import React from "react";
 
 import Hero from "./Hero/Hero";
 import Services from "./Services/Services";
+import FeaturedProducts from "./Featured/FeaturedProducts";
 
 import "./Home.css";
 
@@ -10,6 +11,7 @@ const Home = () => {
 		<>
 			<Hero />
 			<Services />
+            <FeaturedProducts/>
 		</>
 	);
 };

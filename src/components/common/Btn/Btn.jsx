@@ -3,16 +3,12 @@ import PropTypes from "prop-types";
 
 import "./Btn.css";
 
-const Btn = ({txt, variant, className="", ...props}) => {
+const Btn = ({txt, variant, className="", link, ...props}) => {
 	return (
 		<>
-			<a
-                href=""
-                className={`btn ${variant} ${className}`}
-                {...props}
-            >
-                {txt}
-            </a>
+			<a href={link} className={`btn ${variant} ${className}`} {...props}>
+				{txt}
+			</a>
 		</>
 	);
 };

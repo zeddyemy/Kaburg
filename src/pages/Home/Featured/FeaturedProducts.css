@@ -1,0 +1,20 @@
+#featured-prod-section {
+    position: relative;
+}
+
+#featured-prod-section .products {
+    margin: 1.3em 0 0 0;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+}
+@media screen and (min-width: 768px) {
+    #featured-prod-section .products {
+        grid-template-columns: repeat(auto-fit, minmax(30, 1fr));
+    }
+}
+
+.products .card .btn {
+    display: block;
+    font-size: 0.9em;
+    padding: 8px 12px !important;
+}
