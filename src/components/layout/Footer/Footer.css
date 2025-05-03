@@ -1,1 +1,27 @@
 /**  Footer-specific styles */
+.footer {
+    position: relative;
+    background-color: #f3f3f3;
+    border-top: 2px solid var(--theme-clr);
+}
+.footer-content {
+    padding: 2em 0;
+    gap: 2em 5em;
+}
+
+.footer-section h4 {
+    font-size: 1.5em;
+    margin-bottom: 0.9em;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+.footer-section ul li {
+    line-height: 1.9em;
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--outline);
+    padding: 20px 0;
+}
