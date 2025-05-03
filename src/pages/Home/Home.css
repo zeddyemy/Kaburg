@@ -1,0 +1,6 @@
+.wrapper>section {
+    padding: 70px 0px 0px !important;
+}
+.wrapper>section:last-child {
+    padding: 70px 0px 70px !important;
+}

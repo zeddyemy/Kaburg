@@ -5,7 +5,7 @@ import Btn from "../../../components/common/Btn/Btn"
 import "./Hero.css";
 import heroImage from "../../../assets/img/hero.webp";
 
-const Hero = () => {
+const Hero = ({ title, subtitle, ctaText, ctaLink="#" }) => {
 	return (
 		<>
 			<section
@@ -15,13 +15,10 @@ const Hero = () => {
 			>
 				<div className="container">
 					<div className="hero-content flex flex-start">
-						<h2>Elevate your electronics Experience</h2>
-						<p>
-							Discover the latest in electronics, from
-							cutting-edge gadgets to innovative accessories.
-						</p>
+						<h2>{title}</h2>
+						<p>{subtitle}</p>
 
-						<Btn txt={"Explore"} variant={"pill"} />
+						<Btn txt={ctaText} variant={"pill"} link={ctaLink} />
 					</div>
 				</div>
 			</section>

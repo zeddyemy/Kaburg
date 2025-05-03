@@ -14,6 +14,17 @@ import img7 from "../../../assets/img/featured-7.webp";
 import img8 from "../../../assets/img/featured-8.jpg";
 
 const FeaturedProducts = () => {
+	const products = [
+		{ title: "HISREF73WR-RD", price: "630,999.99", image: img1 },
+		{ title: "LGTV86UT80006LA", price: "320,199.99", image: img2 },
+		{ title: "Hisense U7H", price: "199,799.99", image: img3 },
+		{ title: "LG QNED 2024", price: "690,000", image: img4 },
+		{ title: "LG XBOOM Party", price: "200,000", image: img5 },
+		{ title: "Sharp Smart Freezer", price: "1,200,099", image: img6 },
+		{ title: "Alien Gaming Chair", price: "129,099", image: img7 },
+		{ title: "Mist premium Blender", price: "99,000", image: img8 },
+	];
+
 	return (
 		<section id="featured-prod-section" className="featured-prod-section">
 			<div className="container">
@@ -25,48 +36,9 @@ const FeaturedProducts = () => {
 				</div>
 
 				<div className="col-12 grid products">
-					<ProductCard
-						title={"HISREF73WR-RD"}
-						price={"500,204"}
-						prodImg={img1}
-					/>
-					<ProductCard
-						title={"LGTV86UT80006LA"}
-						price={"823,200"}
-						prodImg={img2}
-					/>
-					<ProductCard
-						title={"Hisense U7H"}
-						price={"323,104"}
-						prodImg={img3}
-					/>
-					<ProductCard
-						title={"LG QNED 2024"}
-						price={"723,504"}
-						prodImg={img4}
-					/>
-					<ProductCard
-						title={"LG XBOOM Party"}
-						price={"623,204"}
-						prodImg={img5}
-					/>
-					<ProductCard
-						title={"Sharp Smart Freezer"}
-						price={"1,223,299"}
-						prodImg={img6}
-					/>
-
-					<ProductCard
-						title={"Alien Gaming Chair"}
-						price={"123,699"}
-						prodImg={img7}
-					/>
-
-					<ProductCard
-						title={"Mist premium Blender"}
-						price={"93,500"}
-						prodImg={img8}
-					/>
+					{products.map((product, index) => (
+						<ProductCard key={index} product={product} />
+					))}
 				</div>
 			</div>
 		</section>

@@ -9,9 +9,14 @@ import "./Home.css";
 const Home = () => {
 	return (
 		<>
-			<Hero />
+			<Hero
+				title="Elevate your electronics Experience"
+				subtitle="Discover the latest in electronics, from cutting-edge gadgets to innovative accessories."
+				ctaText="Explore"
+				ctaLink="#"
+			/>
 			<Services />
-            <FeaturedProducts/>
+			<FeaturedProducts />
 		</>
 	);
 };
