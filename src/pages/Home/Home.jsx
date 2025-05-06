@@ -2,6 +2,7 @@ import React from "react";
 
 import Hero from "./Hero/Hero";
 import Services from "./Services/Services";
+import Brands from "./Brands/Brands";
 import FeaturedProducts from "./Featured/FeaturedProducts";
 
 import "./Home.css";
@@ -15,7 +16,11 @@ const Home = () => {
 				ctaText="Explore"
 				ctaLink="#"
 			/>
+
 			<Services />
+
+			<Brands />
+			
 			<FeaturedProducts />
 		</>
 	);
