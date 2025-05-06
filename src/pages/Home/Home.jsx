@@ -4,6 +4,7 @@ import Hero from "./Hero/Hero";
 import Services from "./Services/Services";
 import Brands from "./Brands/Brands";
 import FeaturedProducts from "./Featured/FeaturedProducts";
+import ContactUs from "./ContactUs/ContactUs";
 
 import "./Home.css";
 
@@ -22,6 +23,10 @@ const Home = () => {
 			<Brands />
 			
 			<FeaturedProducts />
+
+			<ContactUs
+				title={"Get in Touch with Us"}
+			/>
 		</>
 	);
 };
